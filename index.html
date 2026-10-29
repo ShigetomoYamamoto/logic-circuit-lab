@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="スイッチを押しながら、論理ゲート（NOT・AND・OR・XOR・NAND・NOR）のしくみを学べる教材です。">
+  <title>さわって学ぶ論理回路</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">さわって学ぶ論理回路</h1>
+    <nav class="chapters" aria-label="章">
+      <span class="chapter is-active" aria-current="page"><span class="ch-no">第1章</span><span class="ch-name">ゲート編</span></span>
+      <button type="button" class="chapter" disabled><span class="ch-no">第2章</span><span class="ch-name">計算編</span><span class="ch-soon">準備中</span></button>
+      <button type="button" class="chapter" disabled><span class="ch-no">第3章</span><span class="ch-name">記憶編</span><span class="ch-soon">準備中</span></button>
+      <button type="button" class="chapter" disabled><span class="ch-no">第4章</span><span class="ch-name">CPU編</span><span class="ch-soon">準備中</span></button>
+    </nav>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="第1章のページ"></nav>
+
+  <main id="main" class="main" tabindex="-1">
+    <noscript><p class="notice">このページはJavaScriptを使います。JavaScriptを有効にしてください。</p></noscript>
+  </main>
+
+  <footer class="pager" aria-label="ページ移動">
+    <button type="button" class="pager-btn" id="prev">前へ</button>
+    <span class="pager-pos" id="pager-pos" aria-live="polite"></span>
+    <button type="button" class="pager-btn" id="next">次へ</button>
+  </footer>
+
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
